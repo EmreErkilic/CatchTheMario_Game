@@ -15,9 +15,19 @@ public class StartScreenActivity extends AppCompatActivity {
     }
 
 
-    public void start(View view) {
+    public void startEasy(View view) {
+
+        Intent intent = new Intent(StartScreenActivity.this,Easy.class);
+        startActivity(intent);
+    }
+    public void startMedium(View view) {
 
         Intent intent = new Intent(StartScreenActivity.this,MainActivity.class);
+        startActivity(intent);
+    }
+    public void startHard(View view) {
+
+        Intent intent = new Intent(StartScreenActivity.this,Hard.class);
         startActivity(intent);
 
     }
